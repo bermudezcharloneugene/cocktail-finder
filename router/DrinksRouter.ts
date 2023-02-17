@@ -1,7 +1,9 @@
 import { Router } from "express";
-import Drink from "../controllers/DrinkController";
+import { Drink } from "../controllers/DrinkController";
 
 const router = Router();
 const drink = new Drink();
 
-router.route('/drink').get((req, res) => drink.get('asd'))
+router.get('/:drink', drink.getCocktail)
+
+export default router;
