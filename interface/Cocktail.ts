@@ -1,6 +1,8 @@
 interface Cocktail {
 
-    get(name: any): any;
-    recipe: object;
+
+    recipe?: object;
+    getIngredients(): any;
+    getRecipe(): any;
 
 }
