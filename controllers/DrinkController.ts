@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-class Drink implements Cocktail {
-    
-    get(name: String): any {
+export default class Drink implements Cocktail {
+
+    public get(name: String): any {
         axios.get('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita')
         .then(res => {
             console.log(res)
